@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15.10.2019, 20:20:37
+    Author     : BlackScorp
+*/
+
+.viewport {
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+}
+.map {
+    position: absolute;
+}
+.mapWrapper {
+    position: relative;
+}
+.tile{
+    position: absolute;
+    border:1px solid black;
+}
+.map .tile.terrain {
+    background: url("../img/tilesets/terrain.png") no-repeat;
+    background-size: 1344px 1472px;
+}
+.map .tile.terrain.empty{
+background: black;
+}
+.map .tile.terrain.gras{
+    background-position: -0px -704px;
+
+}
+.map .tile.terrain.dirt{
+    background-position: -0px -320px;
+ 
+}
+.map .tile.terrain.water{
+    background-position: -1152px -320px;
+ 
+}
